@@ -4,7 +4,7 @@ project(QDetailsView CXX)
 
 option(BUILD_SHARED_LIBS "Build shared library (ON) or static library (OFF)" OFF)
 
-find_package(Qt6 COMPONENTS Core Widgets Gui QuickWidgets QuickTemplates2 QuickControls2 REQUIRED)
+find_package(Qt6 COMPONENTS Core Widgets Gui QuickWidgets QuickTemplates2 GuiPrivate WidgetsPrivate QuickTemplates2Private QuickPrivate QuickControls2 REQUIRED)
 
 qt6_add_resources(QRC_FILE Resources.qrc)
 

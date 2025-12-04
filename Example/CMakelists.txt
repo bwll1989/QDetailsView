@@ -9,9 +9,11 @@ add_executable(QDetailsViewExample
 
 set_property(TARGET QDetailsViewExample PROPERTY AUTOMOC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS QuickControls2)
+find_package(Qt6 REQUIRED COMPONENTS QuickControls2 GuiPrivate WidgetsPrivate QuickTemplates2Private QuickPrivate)
 
-target_link_libraries(QDetailsViewExample PUBLIC QDetailsView Qt::Widgets 	Qt::QuickWidgets 
+target_link_libraries(QDetailsViewExample PUBLIC QDetailsView
+		Qt::Widgets
+		Qt::QuickWidgets
 	Qt::QuickPrivate
 	Qt::QuickTemplates2
 	Qt::QuickTemplates2Private
